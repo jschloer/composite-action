@@ -15,6 +15,7 @@ jobs:
         run:
           rm -Rf .github
   second:
+    needs: [first]
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
