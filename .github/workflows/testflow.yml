@@ -11,3 +11,6 @@ jobs:
       - name: other
         run:
           echo 'test'
+      - name: remove github folder
+        run:
+          rm -Rf .github
