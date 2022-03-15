@@ -1,0 +1,9 @@
+name: test workflow
+on:
+  workflow_dispatch:
+jobs:
+  first:
+    runs-on: ubuntu-latest
+    steps:
+      - name: test
+        uses: ./.github/actions/test

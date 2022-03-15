@@ -1,0 +1,9 @@
+name: Test Action
+description: Nothing
+runs:
+  using: "composite"
+  steps:
+    - name: Test Command
+      shell: bash
+      run: |
+        echo "Test command"
