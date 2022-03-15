@@ -8,3 +8,6 @@ jobs:
       - uses: actions/checkout@v3
       - name: test
         uses: ./.github/actions/test
+      - name: other
+        run:
+          echo 'test'
