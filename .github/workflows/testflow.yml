@@ -14,3 +14,15 @@ jobs:
       - name: remove github folder
         run:
           rm -Rf .github
+  second:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: test
+        uses: ./.github/actions/test
+      - name: other
+        run:
+          echo 'test'
+      - name: remove github folder
+        run:
+          rm -Rf .github
